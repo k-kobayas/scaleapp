@@ -1,0 +1,135 @@
+html,body{
+  overflow: hidden
+}
+
+table{
+width:100%;
+height:100%;
+
+
+}
+
+
+input.text1{
+width:400px;
+height:60px;
+font-size:25;
+
+}
+input.text2{
+width:400px;
+height:60px;
+font-size:25;
+
+}
+textarea{
+width:100%;
+height:80%;
+font-size:15;
+
+}
+
+#disp_count1 {
+     background-color: #0099FF;
+     color: #000;
+     font-size: 72px;
+     border-radius: 10px;
+     padding: 20px;
+     margin: 10px;
+     display: table-cell;
+}
+
+#disp_count2 {
+     background-color: #FF0;
+     color: #000;
+     font-size: 72px;
+     border-radius: 10px;
+     padding: 20px;
+     margin: 10px;
+     display: table-cell;
+}
+
+
+
+#scale0 {
+	width:90%;
+	height:90%;
+
+}
+
+
+.scale{
+	position: relative;
+
+}
+
+
+.pole{
+  text-align: center;
+}
+
+
+
+.bar{
+  text-align: center;
+
+}
+
+
+#btn_count_up1 {
+     font-size: 36px;
+     width: 80px;
+     height:80px;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 10px;
+}
+
+#btn_count_down1 {
+     font-size: 36px;
+     width: 80px;
+     height:80px;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 10px;
+}
+
+#btn_reset1 {
+     font-size: 12px;
+
+     padding: 10px;
+ 
+}
+
+
+#btn_count_up2 {
+     font-size: 36px;
+     width: 80px;
+     height:80px;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 10px;
+}
+
+#btn_count_down2 {
+     font-size: 36px;
+     width: 80px;
+     height:80px;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 10px;
+}
+
+#btn_reset2 {
+     font-size: 12px;
+   
+     padding: 10px;
+     }
+
+#btn_count_up1:hover { background-color:#e6e6fa }
+#btn_count_down1:hover { background-color:#e6e6fa }
+#btn_reset1:hover { background-color:#e6e6fa }
+
+
+
+

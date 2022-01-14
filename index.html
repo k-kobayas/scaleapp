@@ -1,0 +1,315 @@
+<html>
+
+<head>
+
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+
+
+<script>
+
+// ページが読み込まれたら実行
+window.onload = function() {
+
+     // オブジェクトと変数の準備
+     var count_disp1 = document.getElementById("disp_count1");  
+     var count_up_btn1 = document.getElementById("btn_count_up1");
+     var count_down_btn1 = document.getElementById("btn_count_down1");
+     var reset_btn1 = document.getElementById("btn_reset1");
+     var count_value1 = 0;
+
+     var count_disp2 = document.getElementById("disp_count2");  
+     var count_up_btn2 = document.getElementById("btn_count_up2");
+     var count_down_btn2 = document.getElementById("btn_count_down2");
+     var reset_btn2 = document.getElementById("btn_reset2");
+     var count_value2 = 0;
+     var sum = 0;
+
+
+
+
+//左側のボタン
+     // カウントアップボタンクリック処理
+     count_up_btn1.onclick = function (){
+          if (  count_value1 >= 9 ){
+		count_value1 = 9
+	  }
+
+	  else{
+          count_value1 += 1;
+	  sum = count_value2 - count_value1;
+
+	  count_disp1.innerHTML = count_value1;
+     }};
+
+    // カウントアップボタンのマウスダウン処理
+     count_up_btn1.onmousedown = function() {
+          count_up_btn1.style.backgroundColor = "#696969";
+     }
+     // カウントアップボタンのマウスアップ処理
+     count_up_btn1.onmouseup = function() {
+          count_up_btn1.style.backgroundColor = "";
+     }
+
+     // カウントダウンボタンクリック処理
+     count_down_btn1.onclick = function (){
+	   if (  count_value1 <= 0 ){
+		count_value1 = 0
+	  }
+
+	  else{
+
+          count_value1 -= 1;
+	   sum = count_value2 - count_value1;
+          count_disp1.innerHTML = count_value1;
+     }};
+
+    // カウントダウンボタンのマウスダウン処理
+     count_down_btn1.onmousedown = function() {
+          count_down_btn1.style.backgroundColor = "#696969";
+     }
+     // カウントダウンボタンのマウスアップ処理
+     count_down_btn1.onmouseup = function() {
+          count_down_btn1.style.backgroundColor = "";
+     }
+
+     // リセットボタンのクリック処理
+     reset_btn1.onclick = function (){
+          count_value1 = 0; count_disp1.innerHTML = count_value1;
+           sum = count_value2 - count_value1;
+     }
+     // リセットボタンのマウスダウン処理
+     reset_btn1.onmousedown = function() {
+          reset_btn1.style.backgroundColor = "#696969";
+     }
+     // リセットボタンのマウスアップ処理
+     reset_btn1.onmouseup = function() {
+          reset_btn1.style.backgroundColor = "";
+     }
+
+
+//右側のボタン
+     // カウントアップボタンクリック処理
+     count_up_btn2.onclick = function (){
+          if (  count_value2 >= 9 ){
+		count_value2 = 9
+	  }
+
+	  else{
+          count_value2 += 1;
+	  sum = count_value2 - count_value1;
+          count_disp2.innerHTML = count_value2;
+     }};
+
+    // カウントアップボタンのマウスダウン処理
+     count_up_btn2.onmousedown = function() {
+          count_up_btn2.style.backgroundColor = "#696969";
+     }
+     // カウントアップボタンのマウスアップ処理
+     count_up_btn2.onmouseup = function() {
+          count_up_btn2.style.backgroundColor = "";
+     }
+
+     // カウントダウンボタンクリック処理
+     count_down_btn2.onclick = function (){
+	   if (  count_value2 <= 0 ){
+		count_value2 = 0
+	  }
+
+	  else{
+
+          count_value2 -= 1;
+           sum = count_value2 - count_value1;
+          count_disp2.innerHTML = count_value2;
+     }};
+
+    // カウントダウンボタンのマウスダウン処理
+     count_down_btn2.onmousedown = function() {
+          count_down_btn2.style.backgroundColor = "#696969";
+     }
+     // カウントダウンボタンのマウスアップ処理
+     count_down_btn2.onmouseup = function() {
+          count_down_btn2.style.backgroundColor = "";
+     }
+
+     // リセットボタンのクリック処理
+     reset_btn2.onclick = function (){
+          count_value2 = 0; count_disp2.innerHTML = count_value2;
+          sum = count_value2 - count_value1;
+     }
+     // リセットボタンのマウスダウン処理
+     reset_btn2.onmousedown = function() {
+          reset_btn2.style.backgroundColor = "#696969";
+     }
+     // リセットボタンのマウスアップ処理
+     reset_btn2.onmouseup = function() {
+          reset_btn2.style.backgroundColor = "";
+     }
+
+
+addEventListener("click", btnclick );
+function btnclick(){
+if( sum === 0) {
+		document.getElementById("scale0").src = "./scale0.png";
+
+		} 
+
+if( sum === 1) {
+		document.getElementById("scale0").src = "./scale1.png"
+
+		} 
+if( sum === 2) {
+		document.getElementById("scale0").src = "./scale2.png";
+
+		} 
+
+if( sum === 3) {
+		document.getElementById("scale0").src = "./scale3.png"
+
+		} 
+if( sum === 4) {
+		document.getElementById("scale0").src = "./scale4.png";
+
+		} 
+
+if( sum === 5) {
+		document.getElementById("scale0").src = "./scale5.png"
+
+		} 
+
+if( sum === -1) {
+		document.getElementById("scale0").src = "./scale6.png"
+
+		} 
+if( sum === -2) {
+		document.getElementById("scale0").src = "./scale7.png";
+
+		} 
+
+if( sum === -3) {
+		document.getElementById("scale0").src = "./scale8.png"
+
+		} 
+if( sum === -4) {
+		document.getElementById("scale0").src = "./scale9.png";
+
+		} 
+
+if( sum === -5) {
+		document.getElementById("scale0").src = "./scale10.png"
+
+		} 
+
+
+}
+
+
+};
+
+
+
+
+</script>
+
+
+<body>
+
+<center>
+
+<table border="0">
+<tr height="10%" >
+ <th>
+  <input type = "text" class="text1" placeholder="左の箱は何を表す？">
+ </th>
+
+
+
+<th>
+ <center>
+　<font size="12">
+天秤型思考ツール
+  </f>
+ </center>
+</th>
+
+
+<th>
+ <input type = "text" class="text2" placeholder="右の箱は何を表す？">
+</th>
+
+
+
+</tr>
+
+
+
+ <tr height="60%">
+
+
+<div class = "container">
+
+<div class = "block">
+
+  <td width="200">
+<center>
+左の箱の重さを設定しよう<br>
+<input type="button" value="+" id="btn_count_up1"/>
+
+<div id="disp_count1">0</div>
+
+<input type="button" value="－" id="btn_count_down1" /><br>
+<input type="button" value="リセット"id="btn_reset1" />
+</center>
+  </td>
+
+
+  <td  width="100%">
+<div class="scale">
+ <center>
+<div class="pole">
+  <img id = "scale0" src="./scale0.png">
+</div>
+
+  </center>
+</div>
+  </td>
+
+  <td width="200">
+<center>
+右の箱の重さを設定しよう<br>
+<input type="button" value="+" id="btn_count_up2"/>
+
+<div id="disp_count2">0</div>
+
+<input type="button" value="－" id="btn_count_down2"/><br>
+<input type="button" value="リセット" id="btn_reset2"/>
+</center>
+
+</div>
+</div>
+   </td>
+</tr>
+
+<tr height="20%">
+<td colspan="3">
+  <textarea placeholder="理由を書こう"></textarea>
+</td>
+</tr>
+
+
+</table>
+</center>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
