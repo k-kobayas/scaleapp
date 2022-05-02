@@ -12,20 +12,32 @@ height:100%;
 
 input.text1{
 
-font-size:20;
-
+font-size:1.5rem;
+width:100%;
 }
 input.text2{
 
-font-size:20;
-
+font-size:1.5rem;
+width:100%;
 }
 textarea{
 width:100%;
 height:80%;
-font-size:15;
+font-size:1.5rem;
 
 }
+
+table {
+        table-layout: fixed;
+        width: 100%;
+    }
+th.width25 {
+        width: 25%;
+    }
+    
+th.width50 {
+        width: 50%;
+    }
 
 #disp_count1 {
      background-color: #0099FF;
@@ -50,12 +62,12 @@ font-size:15;
 
 
 #scale0 {
-	width:50%;
-	height:50%;
+	width:100%;
+	height:auto;
         max-width:1020px;
-        min-width:510px;
+        min-width:255px;
         max-height:1020px;
-        min-height:510px;
+        min-height:255px;
 
 }
 
