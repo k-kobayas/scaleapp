@@ -30,14 +30,23 @@ font-size:1.5rem;
 table {
         table-layout: fixed;
         width: 100%;
+	height: 100%;
     }
 th.width25 {
         width: 25%;
     }
     
 th.width50 {
-        width: 50%;
+        width: 40%;
     }
+tr.height20 {
+        height: 20%;
+    }
+tr.height60 {
+        height: 60%;
+    }
+
+
 
 #disp_count1 {
      background-color: #0099FF;
